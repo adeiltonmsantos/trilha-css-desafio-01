@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    background-color: #000000;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 40px;
+    background-image:
+        url('../assets/images/banner.png'),
+        linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
+        /* linear-gradient(0deg,rgba(0, 0, 0, 1) 15%, rgba(10, 36, 47, 1) 47%, rgba(10, 36, 47, 1) 52%, rgba(0, 0, 0, 1) 86%); */
+    border-bottom: 1px solid #33A8DB80;
+    background-size: cover;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+    width: 510px;
+    height: 393px;
+}
+
+.banner-content h1{
+    background-image: linear-gradient(#33A8DB, #1472B7);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-content p{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff
+}
+
+.banner-content button{
+    background-image: linear-gradient(#3BA1CD, #1572B7);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    border-image-source: linear-gradient(#3BA1CD, #1572B7);
+    border-width: 2px;
+    border-image-slice: 2;
+    padding: 15px 50px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo{
+    height: 260px;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.logo img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2{
+    color: #33A8DB;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 24px;
+}
+
+main p{
+    color: #ffffff;
+    text-align: center;
+}
+
+#course-content{
+    height: 100vh;
+    text-align: center;
+    margin: 100px auto 100px;
+    border-bottom: 1px solid #33A8DB80;
+}
+
+.modules-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.module{
+    background-color: #252525;
+    color: #ffffff;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    width: 530px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    margin: 0 auto 24px
+}
+
+.module span{
+    color: #33A8D8;
+}
