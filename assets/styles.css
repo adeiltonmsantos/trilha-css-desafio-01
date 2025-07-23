@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +9,24 @@ body{
     background-color: #000000;
 }
 
+/* Geral */
+
+button, h2{
+    letter-spacing: 4px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: #33A8DB;
+    font-weight: bold;
+}
+
+/* header, banner, banner-content, logo */
 .banner{
     display: flex;
     flex-direction: column;
@@ -15,9 +37,8 @@ body{
         url('../assets/images/banner.png'),
         linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
         /* linear-gradient(0deg,rgba(0, 0, 0, 1) 15%, rgba(10, 36, 47, 1) 47%, rgba(10, 36, 47, 1) 52%, rgba(0, 0, 0, 1) 86%); */
-    border-bottom: 1px solid #33A8DB80;
     background-size: cover;
-}
+}    
 
 .banner-content{
     display: flex;
@@ -26,7 +47,7 @@ body{
     margin-top: 56px;
     width: 510px;
     height: 393px;
-}
+}    
 
 .banner-content h1{
     background-image: linear-gradient(#33A8DB, #1472B7);
@@ -35,14 +56,14 @@ body{
     background-clip: text;
     font-size: 2.5rem;
     margin: 0;
-}
+}    
 
 .banner-content p{
     font-size: 1.25rem;
     text-align: center;
     font-weight: 400;
     color: #ffffff
-}
+}    
 
 .banner-content button{
     background-image: linear-gradient(#3BA1CD, #1572B7);
@@ -55,8 +76,7 @@ body{
     border-image-slice: 2;
     padding: 15px 50px;
     font-weight: bold;
-    letter-spacing: 4px;
-}
+}    
 
 .logo{
     height: 260px;
@@ -64,25 +84,23 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     padding: 16px;
-}
+}    
 
 .logo img{
     margin: auto;
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
+}    
 
-h1{
-    text-transform: uppercase;
-    font-weight: 900;
-}
+/* main, sections */
 
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* box-sizing: border-box; */
 }
 
 main h2{
@@ -95,14 +113,22 @@ main h2{
 
 main p{
     color: #ffffff;
-    text-align: center;
 }
 
 #course-content{
     height: 100vh;
+    width: 100%;
     text-align: center;
-    margin: 100px auto 100px;
-    border-bottom: 1px solid #33A8DB80;
+    padding-top: 100px;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#course-content p{
+    text-align: center;
+    width: 800px;
 }
 
 .modules-list{
@@ -126,4 +152,63 @@ main p{
 
 .module span{
     color: #33A8D8;
+}
+
+#transform-world{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/images/woman-code.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#transform-world p{
+    font-size: 2.5rem;
+    text-shadow: 3px 2px #33A8DB;
+    font-weight: 900;
+    text-transform: lowercase;
+    width: 30%;
+    padding-left: 15%;
+}
+
+#professional-challenges{
+    height: 80vh;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#professional-challenges h2{
+    width: 800px;
+}
+
+#professional-challenges p{
+    width: 800px;
+    text-align: center;
+}
+
+#professional-challenges img{
+    height: 46%;
+}
+
+footer{
+    height: 20vh;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #ffffff;
+    margin: 0;
+}
+
+.banner, #course-content, #transform-world, #professional-challenges{
+    border-bottom: 1px solid #33A8DB80;
 }
